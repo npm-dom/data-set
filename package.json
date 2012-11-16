@@ -30,6 +30,5 @@
   ],
   "scripts": {
     "test": "tap ./test"
-  },
-  "private": true
+  }
 }
