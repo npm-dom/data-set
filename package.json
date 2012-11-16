@@ -1,0 +1,35 @@
+{
+  "name": "data-set",
+  "version": "0.1.0",
+  "description": "Element#dataset abstraction",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Colingo/data-set.git",
+  "main": "index",
+  "homepage": "https://github.com/Colingo/data-set",
+  "contributors": [
+    {
+      "name": "Raynos"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Colingo/data-set/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+    "weakmap": "0.0.6"
+  },
+  "devDependencies": {
+    "tap": "~0.3.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Colingo/data-set/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "tap ./test"
+  },
+  "private": true
+}
