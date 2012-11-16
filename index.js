@@ -2,7 +2,7 @@ var Weakmap = require("weakmap")
 
     , datasetMap = Weakmap()
 
-module.exports = window.ds = DataSet
+module.exports = DataSet
 
 function DataSet(elem) {
     var hash = datasetMap.get(elem)
