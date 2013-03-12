@@ -19,7 +19,7 @@ function createHash(elem) {
     var attributes = elem.attributes
         , hash = {}
 
-    if (attributes === null) {
+    if (attributes === null || attributes === undefined) {
         return hash
     }
 
