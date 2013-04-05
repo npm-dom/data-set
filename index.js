@@ -6,6 +6,10 @@ var datasetMap = Individual("__DATA_SET_WEAKMAP", Weakmap())
 module.exports = DataSet
 
 function DataSet(elem) {
+    if (elem.dataset) {
+        return elem.dataset
+    }
+
     var hash = datasetMap.get(elem)
 
     if (!hash) {
