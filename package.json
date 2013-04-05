@@ -17,7 +17,8 @@
     "email": "raynos2@gmail.com"
   },
   "dependencies": {
-    "weakmap": "0.0.6"
+    "weakmap": "0.0.6",
+    "individual": "~0.1.1"
   },
   "devDependencies": {
     "tap": "~0.3.1"

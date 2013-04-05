@@ -1,6 +1,7 @@
 var Weakmap = require("weakmap")
+var Individual = require("individual")
 
-    , datasetMap = Weakmap()
+var datasetMap = Individual("__DATA_SET_WEAKMAP", Weakmap())
 
 module.exports = DataSet
 
@@ -17,7 +18,7 @@ function DataSet(elem) {
 
 function createHash(elem) {
     var attributes = elem.attributes
-        , hash = {}
+    var hash = {}
 
     if (attributes === null || attributes === undefined) {
         return hash
