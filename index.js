@@ -1,18 +1,17 @@
-var createStore = require("weakmap-shim/create-store")
-var Individual = require("individual")
+'use strict';
 
-var createHash = require("./create-hash.js")
+var createHash = require('./create-hash.js');
 
-var hashStore = Individual("__DATA_SET_WEAKMAP@3", createStore())
+var hashKey = '__DATA_SET_WEAK_KEY@4';
 
-module.exports = DataSet
+module.exports = DataSet;
 
 function DataSet(elem) {
-    var store = hashStore(elem)
+    var hash = elem[hashKey];
 
-    if (!store.hash) {
-        store.hash = createHash(elem)
+    if (!hash) {
+        hash = elem[hashKey] = createHash(elem);
     }
 
-    return store.hash
+    return hash;
 }
