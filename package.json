@@ -1,6 +1,6 @@
 {
   "name": "data-set",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "Element#dataset abstraction",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
